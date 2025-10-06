@@ -1,0 +1,12 @@
+services:
+  react-semilla-client:
+    container_name: react-semilla-client
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 3010:3010
+    volumes:
+      - ./src/src:/app/src
+      - /app/node_modules

@@ -1,0 +1,44 @@
+.section {
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1.5px solid var(--border-primary);
+}
+
+.home {
+    background: var(--background-tertiary);
+}
+
+.about {
+    background: var(--background-quaternary);
+}
+.home a {
+    text-decoration: underline;
+    color: var(--text-accent);
+}
+
+.about a {
+    text-decoration: underline;
+    color: var(--text-accent);
+}
+
+.who {
+    background: var(--background-quinary);
+}
+
+.with {
+    background: var(--background-senary);
+}
+
+.provider {
+    background: var(--background-septenary);
+}
+
+.who a,
+.with a,
+.provider a {
+    text-decoration: underline;
+    color: var(--text-accent);
+}

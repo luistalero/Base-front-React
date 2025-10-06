@@ -1,0 +1,21 @@
+.btn-descargar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.btn-descargar span {
+    color: var(--text-accent);
+}
+
+.registrarse {
+    background-color: var(--background-primary);
+    color: var(--text-accent);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 90px;
+    padding: 0 10px;
+}

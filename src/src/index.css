@@ -1,0 +1,52 @@
+:root {
+  --background-primary: #fff;
+  --background-secondary: #c7c4c4;
+  --background-tertiary: #595858;
+  --background-quaternary: #292525;
+  --background-quinary: #521414 ;
+  --background-senary: #392a2a;
+  --background-septenary: #4b3b3b;
+  --background-dark: #222;
+  --background-footer: #111;
+  --text-primary: #fff;
+  --text-secondary: #ccc;
+  --text-dark: #111;
+  --text-highlight: rgb(115, 0, 255);
+  --text-accent: #ff9800;
+  --text-base: rgba(255, 255, 255, 0.87);
+  --border-primary: black;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-secondary);
+  color: var(--text-base);
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}

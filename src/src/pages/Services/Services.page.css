@@ -1,0 +1,9 @@
+.service {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1.5px solid var(--border-primary);
+    background-color: var(--background-septenary);
+    padding: 2rem;
+}

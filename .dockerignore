@@ -1,0 +1,43 @@
+# Dependencias
+node_modules
+.pnpm
+.pnp*
+.pnp.js
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor / IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Build outputs
+dist
+build
+.cache
+.temp
+coverage
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Docker
+.dockerignore
+Dockerfile*
+
+# Env
+.env
+.env.local
+.env.*.local
