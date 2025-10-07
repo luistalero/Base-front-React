@@ -3,7 +3,7 @@
 ¡Bienvenido a **Base Frontend React**! Este repositorio proporciona una base sólida y profesional para proyectos de Frontend desarrollados con React.js. Incluye una estructura organizada, componentes reutilizables, configuración optimizada y buenas prácticas para el desarrollo moderno. Ideal para crear interfaces dinámicas, rápidas y escalables.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![React](https://img.shields.io/badge/React-18.0%2B-61DAFB.svg)
+![React](https://img.shields.io/badge/React-19.0%2B-61DAFB.svg)
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -46,7 +46,6 @@ Base-front-React/
 │   ├── pages/              # Componentes de página
 │   ├── hooks/              # Custom React hooks
 │   ├── utils/              # Utilidades y helpers
-│   ├── styles/             # Archivos de estilos
 │   └── assets/             # Recursos estáticos
 ├── nginx/                  # Configuración de Nginx
 │   └── nginx.conf          # Configuración principal
@@ -123,7 +122,7 @@ Base-front-React/
 
 4. Acceder a la aplicación  
    ```
-   http://localhost:3000
+   http://localhost:3010
    ```
 
 ### 🔄 Flujo de Desarrollo
@@ -161,40 +160,12 @@ sequenceDiagram
 ```bash
 # Desarrollo
 make dev           # Levantar entorno desarrollo
-make dev-logs      # Ver logs de desarrollo
 
 # Producción
 make prod          # Levantar entorno producción
-make prod-build    # Build de producción
-make prod-logs     # Ver logs de producción
 
 # Utilidades
-make clean         # Limpiar contenedores e imágenes
-make test          # Ejecutar tests
-make help          # Mostrar ayuda
-```
-
----
-
-## 🎯 Estructura de Componentes
-
-### 📐 Patrón de Diseño Implementado
-
-```
-src/components/
-├── common/           # Componentes genéricos
-│   ├── Button/
-│   │   ├── Button.jsx
-│   │   ├── Button.module.css
-│   │   └── index.js
-│   └── Modal/
-├── layout/           # Componentes de layout
-│   ├── Header/
-│   ├── Footer/
-│   └── Sidebar/
-└── features/         # Componentes específicos
-    ├── Auth/
-    └── Dashboard/
+make time-dev      # Ejecutar tests
 ```
 
 ---
@@ -205,13 +176,13 @@ src/components/
 
 ```env
 # Configuración de la aplicación
-REACT_APP_API_URL=http://localhost:8000/api
-REACT_APP_ENV=development
-REACT_APP_VERSION=1.0.0
+VITE_APP_API_URL=http://localhost:8000/api
+VITE_APP_ENV=development
+VITE_APP_VERSION=1.0.0
 
 # Configuración de Docker
 NGINX_PORT=80
-APP_PORT=3000
+APP_PORT=3010
 ```
 
 ### 🐳 Optimización Docker
@@ -232,7 +203,7 @@ APP_PORT=3000
 | Métrica            | Objetivo     | Actual         |
 |--------------------|--------------|----------------|
 | Tiempo de Build    | < 3min       | ⏱️ 2m 15s       |
-| Tamaño de Imagen   | < 300MB      | 📦 245MB        |
+| Tamaño de Imagen   | < 500MB      | 📦 393MB        |
 | Tiempo de Carga    | < 2s         | 🚀 1.8s         |
 | Lighthouse Score   | 90           | ✅ 92           |
 
@@ -266,19 +237,6 @@ APP_PORT=3000
 
 ---
 
-## 🐛 Troubleshooting
-
-### Problemas Comunes y Soluciones
-
-| Problema                     | Solución                              |
-|------------------------------|---------------------------------------|
-| Puerto ya en uso             | `make clean && make dev`              |
-| Error de permisos Docker     | `sudo usermod -aG docker $USER`       |
-| Build lento                  | `docker system prune -a`              |
-| Variables de entorno no cargan | Reiniciar contenedores               |
-
----
-
 ## 📞 Soporte
 
 - 📋 Issues: [GitHub Issues](https://github.com/luistalero/Base-front-React/issues)  
@@ -299,7 +257,6 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE)
 
 - 💼 [GitHub](https://github.com/luistalero)  
 - 🏢 Desarrollador Full Stack  
-- 🌐 Especializado en React.js y Docker  
 
 ---
 
@@ -327,3 +284,4 @@ make dev
 ```
 
 ¿Preguntas o sugerencias? No dudes en abrir un [issue](https://github.com/luistalero/Base-front-React/issues) en el repositorio. 🚀
+
